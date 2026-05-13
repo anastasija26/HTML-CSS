@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Блог: Достижения и Навыки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#intro">Главная</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#achievements">Таблица</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="intro" class="card">
+            <h1><i>Привет! Я изучаю Flask</i></h1>
+            <figure class="profile">
+                <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Моё фото">
+                <figcaption>Мой профиль</figcaption>
+            </figure>
+            <p>Я осваиваю Flask, HTML и CSS, создаю простые веб-приложения.</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Мои навыки</h2>
+
+            <article>
+                <h3>Backend</h3>
+                <p>Работаю с Python и Flask, создаю маршруты и подключаю шаблоны.</p>
+                <blockquote>Flask помогает быстро собрать понятное веб-приложение.</blockquote>
+            </article>
+
+            <article>
+                <h3>Frontend</h3>
+                <p>Использую HTML5 и CSS3 для оформления страниц и расположения элементов.</p>
+                <ul>
+                    <li>HTML-теги</li>
+                    <li>Стилизация текста</li>
+                    <li>Работа с блоками</li>
+                </ul>
+            </article>
+            
+            <h3>Планы</h3>
+            <ol>
+                <li>Углубить знания Flask (маршруты, формы, сессии)</li>
+                <li>Освоить адаптивную верстку</li>
+                <li>Сделать больше проектов</li>
+            </ol>
+        </section>
+
+        <section id="achievements" class="card">
+            <h2>Таблица достижений</h2>
+            <table>
+                <tr>
+                    <th>Название темы дисциплины</th>
+                    <th>Знакомство</th>
+                    <th>Введение в Flask</th>
+                    <th>Первое Flask приложение</th>
+                    <th>Обзор базовой структуры приложения</th>
+                    <th>Анатомия HTML элемента и документа</th>
+                    <th>Форматирование текста и атрибуты</th>
+                    <th>Синтаксис CSS и стилизация HTML документа</th>
+                </tr>
+                <tr>
+                    <td>процент выполнения темы</td>
+                    <td>95%</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>процент выполнения домашнего задания</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>комментарии к теме</td>
+                    <td>Тема понятна</td>
+                    <td>Flask освоен</td>
+                    <td>Приложение запущено</td>
+                    <td>Структура понятна</td>
+                    <td>HTML изучен</td>
+                    <td>Атрибуты отработаны</td>
+                    <td>CSS подключен</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <p>&copy; 2026 Мой Блог. <time datetime="2026-05-12">Май 2026</time></p>
+    </footer>
+</body>
+</html>
