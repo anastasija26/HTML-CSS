@@ -13,15 +13,17 @@
 
 ## Структура проекта
 
+```text
 flask-blog/
 ├── app.py
 ├── requirements.txt
 ├── README.md
 ├── templates/
-│ └── index.html
+│   └── index.html
 └── static/
-├── style.css
-└── avatar.jpg
+    ├── style.css
+    └── avatar.jpg
+```
 
 ## Установка (локально)
 
